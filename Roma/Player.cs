@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace Roma
 {
-    internal class Player
+    public class Player
     {
         public List<int> dices { get; set; }
-
+        public int PlayerID { get; set; }
+        public int DiceCount;
+        public int BetValue;
+        public int BetCount;
         public Player() 
-        { 
-            dices = new List<int>();
+        {
+            DiceCount = 1;
         }
     }
 }
